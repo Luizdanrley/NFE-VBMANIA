@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A180FB1-FD64-43D1-953C-88BCBCEE5F2A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>NFE.My.MyApplication</StartupObject>
+    <RootNamespace>NFE</RootNamespace>
+    <AssemblyName>NFE</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>NFE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>NFE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLASSES_DANFE\CodigodeBarra.vb" />
+    <Compile Include="CLASSES_DANFE\Nfe_ImprimirDanfePaisagem.vb" />
+    <Compile Include="CLASSES_DANFE\Nfe_ImprimirDanfeRetrato.vb" />
+    <Compile Include="CLASSES_NFE\ACESSO WEBSERVICE\C_WebService.vb" />
+    <Compile Include="CLASSES_NFE\adi.vb" />
+    <Compile Include="CLASSES_NFE\arma.vb" />
+    <Compile Include="CLASSES_NFE\avulsa.vb" />
+    <Compile Include="CLASSES_NFE\CIDE.vb" />
+    <Compile Include="CLASSES_NFE\CLASSES DE ACAO\CertificadoDigital.vb" />
+    <Compile Include="CLASSES_NFE\CLASSES DE ACAO\Formato.vb" />
+    <Compile Include="CLASSES_NFE\CLASSES DE ACAO\funcoesNfe.vb" />
+    <Compile Include="CLASSES_NFE\CLASSES DE ACAO\LerXmlNFE.vb" />
+    <Compile Include="CLASSES_NFE\CLASSES DE ACAO\NFe.vb" />
+    <Compile Include="CLASSES_NFE\CLASSES DE ACAO\Obrigatorio.vb" />
+    <Compile Include="CLASSES_NFE\CLASSES DE ACAO\ValidarXML.vb" />
+    <Compile Include="CLASSES_NFE\cobr.vb" />
+    <Compile Include="CLASSES_NFE\COFINS.vb" />
+    <Compile Include="CLASSES_NFE\COFINSAliq.vb" />
+    <Compile Include="CLASSES_NFE\COFINSNT.vb" />
+    <Compile Include="CLASSES_NFE\COFINSOutr.vb" />
+    <Compile Include="CLASSES_NFE\COFINSQtde.vb" />
+    <Compile Include="CLASSES_NFE\COFINSST.vb" />
+    <Compile Include="CLASSES_NFE\comb.vb" />
+    <Compile Include="CLASSES_NFE\compra.vb" />
+    <Compile Include="CLASSES_NFE\dest.vb" />
+    <Compile Include="CLASSES_NFE\det.vb" />
+    <Compile Include="CLASSES_NFE\DI.vb" />
+    <Compile Include="CLASSES_NFE\dup.vb" />
+    <Compile Include="CLASSES_NFE\emit.vb" />
+    <Compile Include="CLASSES_NFE\enderDest.vb" />
+    <Compile Include="CLASSES_NFE\enderEmit.vb" />
+    <Compile Include="CLASSES_NFE\entrega.vb" />
+    <Compile Include="CLASSES_NFE\exporta.vb" />
+    <Compile Include="CLASSES_NFE\fat.vb" />
+    <Compile Include="CLASSES_NFE\ICMS.vb" />
+    <Compile Include="CLASSES_NFE\ICMS00.vb" />
+    <Compile Include="CLASSES_NFE\ICMS10.vb" />
+    <Compile Include="CLASSES_NFE\ICMS20.vb" />
+    <Compile Include="CLASSES_NFE\ICMS30.vb" />
+    <Compile Include="CLASSES_NFE\ICMS40.vb" />
+    <Compile Include="CLASSES_NFE\ICMS51.vb" />
+    <Compile Include="CLASSES_NFE\ICMS60.vb" />
+    <Compile Include="CLASSES_NFE\ICMS70.vb" />
+    <Compile Include="CLASSES_NFE\ICMS90.vb" />
+    <Compile Include="CLASSES_NFE\ICMSComb.vb" />
+    <Compile Include="CLASSES_NFE\ICMSCons.vb" />
+    <Compile Include="CLASSES_NFE\ICMSInter.vb" />
+    <Compile Include="CLASSES_NFE\ICMSTot.vb" />
+    <Compile Include="CLASSES_NFE\ide.vb" />
+    <Compile Include="CLASSES_NFE\II.vb" />
+    <Compile Include="CLASSES_NFE\imposto.vb" />
+    <Compile Include="CLASSES_NFE\infAdic.vb" />
+    <Compile Include="CLASSES_NFE\infNFE.vb" />
+    <Compile Include="CLASSES_NFE\IPI.vb" />
+    <Compile Include="CLASSES_NFE\IPINT.vb" />
+    <Compile Include="CLASSES_NFE\IPITrib.vb" />
+    <Compile Include="CLASSES_NFE\ISSQN.vb" />
+    <Compile Include="CLASSES_NFE\ISSQNTot.vb" />
+    <Compile Include="CLASSES_NFE\lacres.vb" />
+    <Compile Include="CLASSES_NFE\med.vb" />
+    <Compile Include="CLASSES_NFE\NFref.vb" />
+    <Compile Include="CLASSES_NFE\obsCont.vb" />
+    <Compile Include="CLASSES_NFE\obsFisco.vb" />
+    <Compile Include="CLASSES_NFE\PIS.vb" />
+    <Compile Include="CLASSES_NFE\PISAliq.vb" />
+    <Compile Include="CLASSES_NFE\PISNT.vb" />
+    <Compile Include="CLASSES_NFE\PISOutr.vb" />
+    <Compile Include="CLASSES_NFE\PISQtde.vb" />
+    <Compile Include="CLASSES_NFE\PISST.vb" />
+    <Compile Include="CLASSES_NFE\procRef.vb" />
+    <Compile Include="CLASSES_NFE\prod.vb" />
+    <Compile Include="CLASSES_NFE\reboque.vb" />
+    <Compile Include="CLASSES_NFE\refNF.vb" />
+    <Compile Include="CLASSES_NFE\retirada.vb" />
+    <Compile Include="CLASSES_NFE\retTransp.vb" />
+    <Compile Include="CLASSES_NFE\retTrib.vb" />
+    <Compile Include="CLASSES_NFE\total.vb" />
+    <Compile Include="CLASSES_NFE\transp.vb" />
+    <Compile Include="CLASSES_NFE\transporta.vb" />
+    <Compile Include="CLASSES_NFE\veicProd.vb" />
+    <Compile Include="CLASSES_NFE\veicTransp.vb" />
+    <Compile Include="CLASSES_NFE\vol.vb" />
+    <Compile Include="NFE\CLASSES_DANFE\CodigodeBarra.vb" />
+    <Compile Include="NFE\CLASSES_DANFE\ImprimirDanfe.vb" />
+    <Compile Include="NFE\CLASSES_NFE\adi.vb" />
+    <Compile Include="NFE\CLASSES_NFE\arma.vb" />
+    <Compile Include="NFE\CLASSES_NFE\avulsa.vb" />
+    <Compile Include="NFE\CLASSES_NFE\CIDE.vb" />
+    <Compile Include="NFE\CLASSES_NFE\CLASSES DE ACAO\CertificadoDigital.vb" />
+    <Compile Include="NFE\CLASSES_NFE\CLASSES DE ACAO\Formato.vb" />
+    <Compile Include="NFE\CLASSES_NFE\CLASSES DE ACAO\funcoes.vb" />
+    <Compile Include="NFE\CLASSES_NFE\CLASSES DE ACAO\NFe.vb" />
+    <Compile Include="NFE\CLASSES_NFE\CLASSES DE ACAO\Obrigatorio.vb" />
+    <Compile Include="NFE\CLASSES_NFE\CLASSES DE ACAO\ValidarXML.vb" />
+    <Compile Include="NFE\CLASSES_NFE\cobr.vb" />
+    <Compile Include="NFE\CLASSES_NFE\COFINS.vb" />
+    <Compile Include="NFE\CLASSES_NFE\COFINSAliq.vb" />
+    <Compile Include="NFE\CLASSES_NFE\COFINSNT.vb" />
+    <Compile Include="NFE\CLASSES_NFE\COFINSOutr.vb" />
+    <Compile Include="NFE\CLASSES_NFE\COFINSQtde.vb" />
+    <Compile Include="NFE\CLASSES_NFE\COFINSST.vb" />
+    <Compile Include="NFE\CLASSES_NFE\comb.vb" />
+    <Compile Include="NFE\CLASSES_NFE\compra.vb" />
+    <Compile Include="NFE\CLASSES_NFE\dest.vb" />
+    <Compile Include="NFE\CLASSES_NFE\det.vb" />
+    <Compile Include="NFE\CLASSES_NFE\DI.vb" />
+    <Compile Include="NFE\CLASSES_NFE\dup.vb" />
+    <Compile Include="NFE\CLASSES_NFE\emit.vb" />
+    <Compile Include="NFE\CLASSES_NFE\enderDest.vb" />
+    <Compile Include="NFE\CLASSES_NFE\enderEmit.vb" />
+    <Compile Include="NFE\CLASSES_NFE\entrega.vb" />
+    <Compile Include="NFE\CLASSES_NFE\exporta.vb" />
+    <Compile Include="NFE\CLASSES_NFE\fat.vb" />
+    <Compile Include="NFE\CLASSES_NFE\ICMS.vb" />
+    <Compile Include="NFE\CLASSES_NFE\ICMS00.vb" />
+    <Compile Include="NFE\CLASSES_NFE\ICMS10.vb" />
+    <Compile Include="NFE\CLASSES_NFE\ICMS20.vb" />
+    <Compile Include="NFE\CLASSES_NFE\ICMS30.vb" />
+    <Compile Include="NFE\CLASSES_NFE\ICMS40.vb" />
+    <Compile Include="NFE\CLASSES_NFE\ICMS51.vb" />
+    <Compile Include="NFE\CLASSES_NFE\ICMS60.vb" />
+    <Compile Include="NFE\CLASSES_NFE\ICMS70.vb" />
+    <Compile Include="NFE\CLASSES_NFE\ICMS90.vb" />
+    <Compile Include="NFE\CLASSES_NFE\ICMSComb.vb" />
+    <Compile Include="NFE\CLASSES_NFE\ICMSCons.vb" />
+    <Compile Include="NFE\CLASSES_NFE\ICMSInter.vb" />
+    <Compile Include="NFE\CLASSES_NFE\ICMSTot.vb" />
+    <Compile Include="NFE\CLASSES_NFE\ide.vb" />
+    <Compile Include="NFE\CLASSES_NFE\II.vb" />
+    <Compile Include="NFE\CLASSES_NFE\imposto.vb" />
+    <Compile Include="NFE\CLASSES_NFE\infAdic.vb" />
+    <Compile Include="NFE\CLASSES_NFE\infNFE.vb" />
+    <Compile Include="NFE\CLASSES_NFE\IPI.vb" />
+    <Compile Include="NFE\CLASSES_NFE\IPINT.vb" />
+    <Compile Include="NFE\CLASSES_NFE\IPITrib.vb" />
+    <Compile Include="NFE\CLASSES_NFE\ISSQN.vb" />
+    <Compile Include="NFE\CLASSES_NFE\ISSQNTot.vb" />
+    <Compile Include="NFE\CLASSES_NFE\lacres.vb" />
+    <Compile Include="NFE\CLASSES_NFE\med.vb" />
+    <Compile Include="NFE\CLASSES_NFE\NFref.vb" />
+    <Compile Include="NFE\CLASSES_NFE\obsCont.vb" />
+    <Compile Include="NFE\CLASSES_NFE\obsFisco.vb" />
+    <Compile Include="NFE\CLASSES_NFE\PIS.vb" />
+    <Compile Include="NFE\CLASSES_NFE\PISAliq.vb" />
+    <Compile Include="NFE\CLASSES_NFE\PISNT.vb" />
+    <Compile Include="NFE\CLASSES_NFE\PISOutr.vb" />
+    <Compile Include="NFE\CLASSES_NFE\PISQtde.vb" />
+    <Compile Include="NFE\CLASSES_NFE\PISST.vb" />
+    <Compile Include="NFE\CLASSES_NFE\procRef.vb" />
+    <Compile Include="NFE\CLASSES_NFE\prod.vb" />
+    <Compile Include="NFE\CLASSES_NFE\reboque.vb" />
+    <Compile Include="NFE\CLASSES_NFE\refNF.vb" />
+    <Compile Include="NFE\CLASSES_NFE\retirada.vb" />
+    <Compile Include="NFE\CLASSES_NFE\retTransp.vb" />
+    <Compile Include="NFE\CLASSES_NFE\retTrib.vb" />
+    <Compile Include="NFE\CLASSES_NFE\total.vb" />
+    <Compile Include="NFE\CLASSES_NFE\transp.vb" />
+    <Compile Include="NFE\CLASSES_NFE\transporta.vb" />
+    <Compile Include="NFE\CLASSES_NFE\veicProd.vb" />
+    <Compile Include="NFE\CLASSES_NFE\veicTransp.vb" />
+    <Compile Include="NFE\CLASSES_NFE\vol.vb" />
+    <Compile Include="NFE\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NFE\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NFE\ImprimirDanfeRetrato.vb" />
+    <Compile Include="NFE\My Project\Application.Designer.vb" />
+    <Compile Include="NFE\My Project\AssemblyInfo.vb" />
+    <Compile Include="NFE\My Project\Resources.Designer.vb" />
+    <Compile Include="NFE\My Project\Settings.Designer.vb" />
+    <Compile Include="NFE\TesteDanfe.Designer.vb">
+      <DependentUpon>TesteDanfe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NFE\TesteDanfe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TesteDanfe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TesteDanfe.Designer.vb">
+      <DependentUpon>TesteDanfe.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WEBSERVICE\nfeCabecMsg.vb" />
+    <Compile Include="WEBSERVICE\NfeCancelamento.vb" />
+    <Compile Include="WEBSERVICE\NfeConsulta.vb" />
+    <Compile Include="WEBSERVICE\NfeInutilizacao.vb" />
+    <Compile Include="WEBSERVICE\NfeRecepcao.vb" />
+    <Compile Include="WEBSERVICE\NfeRecepcao2.vb" />
+    <Compile Include="WEBSERVICE\NfeRetRecepcao.vb" />
+    <Compile Include="WEBSERVICE\NfeRetRecepcao2.vb" />
+    <Compile Include="WEBSERVICE\NfeStatusServico.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NFE\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NFE\My Project\Resources.resx" />
+    <EmbeddedResource Include="NFE\obj\Debug\NFE.Form1.resources" />
+    <EmbeddedResource Include="NFE\obj\Debug\NFE.Resources.resources" />
+    <EmbeddedResource Include="NFE\obj\Debug\NFE.TesteDanfe.resources" />
+    <EmbeddedResource Include="NFE\TesteDanfe.resx">
+      <DependentUpon>TesteDanfe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TesteDanfe.resx">
+      <DependentUpon>TesteDanfe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="NFE\bin\Debug\NFE.vshost.exe.manifest" />
+    <None Include="NFE\bin\Debug\nfe_v1.10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFE\My Project\Settings.settings" />
+    <None Include="NFE\obj\Debug\NFE.vbproj.GenerateResource.Cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NFE\bin\Debug\logo.jpg" />
+    <Content Include="NFE\bin\Debug\NFE.exe" />
+    <Content Include="NFE\bin\Debug\NFE.pdb" />
+    <Content Include="NFE\bin\Debug\NFE.vshost.exe" />
+    <Content Include="NFE\bin\Debug\NFE.xml" />
+    <Content Include="NFE\My Project\Application.myapp" />
+    <Content Include="NFE\NFE.sln" />
+    <Content Include="NFE\NFE.vbproj" />
+    <Content Include="NFE\NFE.vbproj.user" />
+    <Content Include="NFE\obj\Debug\NFE.exe" />
+    <Content Include="NFE\obj\Debug\NFE.pdb" />
+    <Content Include="NFE\obj\Debug\NFE.vbproj.FileListAbsolute.txt" />
+    <Content Include="NFE\obj\Debug\NFE.xml" />
+    <Content Include="NFE\obj\Debug\TempPE\My Project.Resources.Designer.vb.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NFE\bin\Release\" />
+    <Folder Include="NFE\obj\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
